@@ -1,0 +1,136 @@
+{
+  "info": {
+    "_postman_id": "4f6b4f00-3a55-48ee-ae94-2af8415ecd1c",
+    "name": "Book_RestApi_col",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54400567",
+    "_collection_link": "https://go.postman.co/collection/54400567-4f6b4f00-3a55-48ee-ae94-2af8415ecd1c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Update",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "   {\r\n        \"id\": 1,\r\n        \"title\": \"C#\",\r\n        \"author\": \"Mani\"\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7094/api/books/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7094",
+          "path": [
+            "api",
+            "books",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View all data",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7094/api/books",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7094",
+          "path": [
+            "api",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "View by Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7094/api/books/2",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7094",
+          "path": [
+            "api",
+            "books",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Java\",\r\n    \"author\": \"lokesh\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7094/api/books/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7094",
+          "path": [
+            "api",
+            "books",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7094/api/books/2",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7094",
+          "path": [
+            "api",
+            "books",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
