@@ -1,42 +1,53 @@
-# Books REST API
+# 📚 Books REST API
 
-A simple ASP.NET Core Web API for managing books using CRUD operations.
+A simple and beginner-friendly **ASP.NET Core Web API** project that performs full CRUD operations for managing books.
 
-## Features
+This project follows **REST API principles** and uses a **controller-based architecture** with in-memory storage.
 
-- Get all books
-- Get book by ID
-- Create book
-- Update book
-- Delete book
-- Validation using Data Annotations
-- In-memory storage using List<Book>
+---
 
-## Technologies Used
+# 🚀 Features
 
-- ASP.NET Core Web API
-- C#
-- REST API
-- Postman
-- Git & GitHub
+✅ Full CRUD Operations  
+✅ RESTful API Design  
+✅ Controller-Based API  
+✅ DTOs for Request Handling  
+✅ Validation using Data Annotations  
+✅ Proper HTTP Status Codes  
+✅ In-Memory Storage using `List<Book>`  
+✅ API Testing with Postman  
+✅ Git & GitHub Integration  
 
-## API Endpoints
+---
 
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | /api/books | Get all books |
-| GET | /api/books/{id} | Get book by ID |
-| POST | /api/books | Create new book |
-| PUT | /api/books/{id} | Update book |
-| DELETE | /api/books/{id} | Delete book |
+# 🛠 Technologies Used
 
-## Validation
+| Technology | Purpose |
+|---|---|
+| ASP.NET Core Web API | Backend Framework |
+| C# | Programming Language |
+| .NET 8 | Runtime Framework |
+| REST API | API Architecture |
+| Postman | API Testing |
+| Git & GitHub | Version Control |
 
-- Title is required
-- Author is required
+---
 
-## Testing
+# 📁 Project Structure
 
-API tested using Postman.
-
-Postman collection included in repository.
+```text
+BooksApi
+│
+├── Controllers
+│     └── BooksController.cs
+│
+├── DTOs
+│     ├── CreateBookDto.cs
+│     └── UpdateBookDto.cs
+│
+├── Models
+│     └── Book.cs
+│
+├── Program.cs
+├── README.md
+└── BooksApi.postman_collection.json
